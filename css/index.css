@@ -1,0 +1,21 @@
+/* for global */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* for memory button  */
+.memory-btn:hover{
+    background-color:black;
+    color: blanchedalmond;
+   
+}
+/* for storage button  */
+.storage-btn:hover{
+    background-color:black;
+    color: blanchedalmond;
+}
+/* for delivery button  */
+.delivery-btn:hover{
+    background-color:black;
+    color: blanchedalmond;
+}

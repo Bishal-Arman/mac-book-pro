@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book</title>
+    <!-- tailwind cssframework link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- main css link -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main>
+    <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-8">
+        <div>
+            <img src="images/mac.png" alt="">
+        </div>
+        <!-- for discription section -->
+        <div class="pl-12"> 
+           <h1 class="font-bold text-3xl text-gray-700">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+           <p class="text-gray-700 text-sm mt-2">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,7-core GPU,and 16-core Neural Engine 8Gb unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Keyword-US English </p>
+
+          <!-- for memory section -->
+           <h1 class="mt-8 font-bold text-xl text-gray-700">Memory</h1>
+           <button id="button-8GB" class="memory-btn border-2 rounded px-3 py-1 text-sm text-gray-700">8GB unified memory</button>
+           <button id="button-16GB" class="memory-btn border-2 rounded px-3 py-1 text-sm text-gray-700">16GB unified memory</button>
+
+            <!-- for storage section -->
+           <h1 class="mt-8 font-bold text-xl text-gray-700">Storage</h1>
+           <div class="grid grid-cols-3 gap-1">
+            <button id="button-256GB" class="storage-btn border-2 rounded py-1 text-sm text-gray-700">256GB SSD storage</button>
+            <button id="button-512GB" class=" storage-btn border-2 rounded py-1 text-sm text-gray-700">512GB SSD storage</button>
+            <button id="button-1TB" class="storage-btn border-2 rounded py-1 text-sm text-gray-700">1TB SSD storage</button>
+            </div>
+
+            <!-- for delivery section -->
+           <h1 class="mt-8 font-bold text-xl text-gray-700">Choose your delivery option</h1>
+           <div class="grid grid-cols-2 gap-1">
+            <button id="free-delivery" class="delivery-btn border-2 rounded py-1 text-sm text-gray-700">Friday,Aug 25 FREE Prime Delivery</button>
+            <button id="charge-delivery" class="delivery-btn border-2 rounded text-sm py-1 text-gray-700">Friday,Aug 21 Delivery charge $20</button>
+           </div>
+
+         <!-- for total price section -->
+          <div class="text-gray-700 text-sm font-bold mt-11">  
+            <h1 class="mb-2">Best price   <span class="pl-20">$<span id="best-price">1299</span></span></h1> <hr class="w-2/4">
+            <h1  class="my-2">Extra Memory Cost<span class="pl-6">$<span id="memory-cost">0</span></span></h1><hr class="w-2/4">
+            <h1  class="my-2">Extra Storage Cost <span class="pl-6">$<span id="storage-cost">0</span></span></h1><hr class="w-2/4">
+            <h1  class="border-b-2 w-2/4 border-gray-500 my-2 pb-2">Delivery charge  <span class="pl-11">$<span id="delivery-charge">0</span></span></h1>
+            <h1  class="mb-2">Total Price<span  class="pl-20 ">$<span id="total-price">1299</span></span></h1><hr class="w-2/4">
+          </div>
+
+          <!-- using pomo code section -->
+          <h2 class="text-sm text-gray-800 font-semibold my-2">Add Pomo code</h2>
+          <input id="input-field" class="border-2 rounded py-1 text-sm text-gray-700" type="text">
+          <button id="apply-btn" class="bg-red-600 px-2 py-1 rounded text-white">Apply</button>
+        
+        </div>
+
+    </section>
+     <!-- discount and final ammount section -->
+    <section class="mb-8">
+        <hr class="w-3/4 mx-auto my-4 border-gray-300"> <h1 class="text-center font-bold text-3xl text-gray-700">Total:$<span id="final-total">1299</span></h1>
+    </section>
+   
+</main>
+
+<!-- javascript link -->
+<script src="js/script.js"></script>
+</body>
+</html>
